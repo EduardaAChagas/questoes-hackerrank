@@ -1,6 +1,4 @@
 
-
-
 def checar(list):
     print('list: ',list)
     tam = len(list)

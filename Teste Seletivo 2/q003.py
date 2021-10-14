@@ -12,9 +12,3 @@ def removeNodes(listHead,x):
 
     
     return listHead 
-
-cabeca = [5, 10, 11, 12, 4]
-x = 5
-print(cabeca)
-removeNodes(cabeca, x)
-print(cabeca)

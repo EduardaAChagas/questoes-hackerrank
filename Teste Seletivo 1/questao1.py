@@ -30,7 +30,6 @@
 # binaryToDecimal(teste27)
 
 def binaryToDecimal(binary):
-    
     binary1 = binary
     decimal, i, n = 0, 0, 0
     while(binary != 0):
@@ -39,6 +38,7 @@ def binaryToDecimal(binary):
         binary = binary//10
         i += 1
     return decimal
+    
 def changeAds(base10):
     binaro = format(base10,"b") 
     aux = binaro

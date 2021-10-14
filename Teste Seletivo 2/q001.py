@@ -1,5 +1,5 @@
 def binaryToDecimal(binary):
-    
+    #1x2² + 0x2¹ + 1*2⁰
     binary1 = binary
     decimal, i, n = 0, 0, 0
     while(binary != 0):
@@ -37,22 +37,4 @@ def fourthBit(number):
     print('newlist: ',newList)
     return numBin[3]
 teste = 23
-print(fourthBit(teste))
-
-def changeAds(base10):
-    binaro = format(base10,"b") 
-    aux = binaro
-    cont = 0
-    str(aux)
-    new_aux = aux
-    contaCaracteres = binaro.count('1')
-    contaCaracteres = contaCaracteres + binaro.count('0')
-    print('aux: antes do for',aux)
-    for i in range(len(aux)):
-        if aux[i]==1:
-            new_aux = aux.replace(aux[i],0)
-        elif aux[i]==0:
-            new_aux = aux.replace(aux[i],1)
-    new_aux = int(new_aux)
-    print("new aux: ",new_aux)
-    return binaryToDecimal(new_aux)
+print("fourthBit: ",fourthBit(teste))
